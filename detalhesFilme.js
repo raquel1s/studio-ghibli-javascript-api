@@ -54,8 +54,6 @@ async function buscarPersonagens() {
     return personagens;
 }
 
-console.log(buscarPersonagens())
-
 window.addEventListener('load', () => {
     criarTela();
 })
