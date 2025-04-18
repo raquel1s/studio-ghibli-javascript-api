@@ -1,0 +1,148 @@
+@font-face {
+    font-family: bodyFont;
+    src: url(/font/LEMONMILK-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: bodyfont;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem;
+    background-color: #1ba0d0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    max-width: 70%;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.detalhes div {
+    text-align: center;
+}
+
+.banner img {
+    max-width: 90%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.cabecalho h2 {
+    font-size: 2.2rem;
+}
+
+.cabecalho p {
+    font-size: 1.2rem;
+}
+
+.informacoes {
+    margin-top: 3rem;
+}
+
+.producao {
+    margin-top: 2rem;
+}
+
+#tituloPersonagens{
+    margin-bottom: 2rem;
+}
+
+.listaPersonagens p{
+    margin-top: 0.6rem;
+}
+
+@media (min-width: 992px) {
+    header {
+        flex-direction: row;
+        padding-right: 4rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 20%;
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 3rem;
+    }
+
+    .informacoes {
+        max-width: 40%;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+    .detalhes{
+        margin: 3rem 2rem;
+    }
+}
